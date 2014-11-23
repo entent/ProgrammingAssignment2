@@ -5,7 +5,7 @@
 
 ## Much like the example given in the README file, this 
 ## function creates a list of functions that either call 
-## or store the inverse of a matrix.
+## or store a matrix and its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
        inv <- NULL
@@ -22,8 +22,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## This function, given a matrix input, will check if its 
-## inverse has been cached in the past.  If so, it will 
+## This function, given an output x of makeCacheMatrix(mat), 
+## will check if the inverse of `mat` has been 
+## cached in the past.  If so, it will 
 ## output the inverse, along with a message saying that it 
 ## has been retrieved.  Otherwise, it calculates the 
 ## inverse of the matrix as its output, as well as caches the 
